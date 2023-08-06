@@ -11,7 +11,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   place-items: center;
   justify-content: center;
@@ -22,7 +22,7 @@ body {
 .container {
   display: grid;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   justify-content: center;
   align-items: center;
   place-items: center;
