@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.result {
+  color: hsl(221, 100%, 96%);
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: grid;
+  height: 44vh;
+  width: 100vw;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  place-items: center;
+  grid-template-areas: "a a a a  a a a a  a a a a  a a a a" "b b b b  b b b b  b b b b  b b b b" "c c c c  c c c c  c c c c  c c c c" "d d d d  d d d d  d d d d  d d d d";
+}
+
+.summary {
+  background-color: hsl(0, 0%, 100%);
+  gap: 0.9em;
+  display: grid;
+  height: 56vh;
+  width: 100vw;
+  place-items: center;
+  grid-template-areas: "e e e e  e e e e  e e e e  e e e e" "f f f f  f f f f  f f f f  f f f f" "g g g g  g g g g  g g g g  g g g g" "h h h h  h h h h  h h h h  h h h h" "i i i i  i i i i  i i i i  i i i i" "j j j j  j j j j  j j j j  j j j j" "j j j j  j j j j  j j j j  j j j j";
+}
+
+.block-1 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  color: hsl(241, 100%, 89%);
+  grid-area: a;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.75em;
+  padding-bottom: 0.2em;
+}
+
+.block-2 {
+  grid-area: b;
+  display: grid;
+  width: 7.5em;
+  height: 7.5em;
+  border-radius: 50%;
+  align-items: center;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  grid-template-areas: "a2 a2 a2 a2" "a2 a2 a2 a2" "a2 a2 a2 a2" "a2 a2 a2 a2" "a2 a2 a2 a2" "b2 b2 b2 b2";
+}
+
+.block-3 {
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.block-4 {
+  display: grid;
+  height: 100%;
+  grid-area: d;
+  margin: 0 3em;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.8em;
+  font-size: 16px;
+  color: hsl(241, 100%, 89%);
+}
+
+.block-5 {
+  grid-area: e;
+  width: 85%;
+  height: 100%;
+  display: grid;
+  padding-bottom: 0.4em;
+  font-weight: 700;
+  align-items: end;
+  color: hsl(224, 30%, 27%);
+}
+
+.block-6 {
+  display: grid;
+  font-size: 16px;
+  width: 85%;
+  height: 100%;
+  align-items: center;
+  border-radius: 0.5em;
+  background-color: hsla(0, 100%, 67%, 0.06);
+  grid-area: f;
+  grid-template-areas: "ic1 c2 c2 c2  c2 c2 c2 c2  d2 d2 d2 e2";
+}
+
+.block-7 {
+  grid-area: g;
+  display: grid;
+  width: 85%;
+  height: 100%;
+  font-size: 16px;
+  align-items: center;
+  border-radius: 0.5em;
+  background-color: hsla(39, 100%, 56%, 0.06);
+  grid-template-areas: "ic2 f2 f2 f2  f2 f2 f2 f2  g2 g2 g2 h2";
+}
+
+.block-8 {
+  grid-area: h;
+  display: grid;
+  width: 85%;
+  height: 100%;
+  font-size: 16px;
+  align-items: center;
+  background-color: hsla(166, 100%, 37%, 0.06);
+  border-radius: 0.5em;
+  grid-template-areas: "ic3 i2 i2 i2  i2 i2 i2 i2  j2 j2 j2 k2";
+}
+
+.block-9 {
+  grid-area: i;
+  display: grid;
+  width: 85%;
+  height: 100%;
+  font-size: 16px;
+  align-items: center;
+  border-radius: 0.5em;
+  background-color: hsla(234, 85%, 45%, 0.06);
+  grid-template-areas: "ic4 l2 l2 l2  l2 l2 l2 l2  m2 m2 m2 n2";
+}
+
+.block-10 {
+  display: grid;
+  width: 85%;
+  height: 57%;
+  margin-bottom: 1.2em;
+  align-items: center;
+  border-radius: 2em;
+  justify-content: center;
+  grid-area: j;
+  font-weight: 700;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(221, 100%, 96%);
+}
+
+.block-10:active {
+  background-color: hsl(241, 72%, 46%);
+}
+
+.block-10:hover {
+  background-color: hsl(241, 72%, 46%);
+}
+
+.box-1 {
+  grid-area: a2;
+  font-size: 55px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+
+.box-2 {
+  grid-area: b2;
+  justify-self: center;
+  padding-bottom: 1em;
+  color: hsla(241, 100%, 89%, 0.6);
+  font-size: 15px;
+}
+
+.box-icon-1 {
+  grid-area: ic1;
+  justify-self: center;
+  padding-top: 0.2em;
+  padding-left: 0.4em;
+}
+
+.box-3 {
+  grid-area: c2;
+  color: hsl(0, 100%, 67%);
+}
+
+.box-4 {
+  grid-area: d2;
+  justify-self: end;
+  padding-right: 0.5em;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.box-5 {
+  grid-area: e2;
+  justify-self: start;
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.box-icon-2 {
+  grid-area: ic2;
+  justify-self: center;
+  padding-top: 0.2em;
+  padding-left: 0.4em;
+}
+
+.box-6 {
+  grid-area: f2;
+  color: hsl(39, 100%, 56%);
+}
+
+.box-7 {
+  grid-area: g2;
+  justify-self: end;
+  padding-right: 0.5em;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.box-8 {
+  grid-area: h2;
+  justify-self: start;
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.box-icon-3 {
+  grid-area: ic3;
+  justify-self: center;
+  padding-top: 0.2em;
+  padding-left: 0.4em;
+}
+
+.box-9 {
+  color: hsl(166, 100%, 37%);
+  grid-area: i2;
+}
+
+.box-10 {
+  grid-area: j2;
+  justify-self: end;
+  padding-right: 0.5em;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.box-11 {
+  grid-area: k2;
+  justify-self: start;
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.box-icon-4 {
+  grid-area: ic4;
+  justify-self: center;
+  padding-top: 0.2em;
+  padding-left: 0.4em;
+}
+
+.box-12 {
+  grid-area: l2;
+  color: hsl(234, 85%, 45%);
+}
+
+.box-13 {
+  grid-area: m2;
+  justify-self: end;
+  padding-right: 0.5em;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.box-14 {
+  grid-area: n2;
+  justify-self: start;
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+@media (min-width: 765px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    width: 620px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px 15px hsla(241, 72%, 46%, 0.1);
+    border-radius: 1.5em;
+  }
+  .result {
+    width: 310px;
+    height: 450px;
+    border-radius: 1.5em;
+  }
+  .summary {
+    width: 310px;
+    height: 450px;
+    border-bottom-right-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+  }
+  .block-2 {
+    width: 9em;
+    height: 9em;
+    align-items: start;
+  }
+  .box-2 {
+    padding-bottom: 2em;
+  }
+  .block-10 {
+    height: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
