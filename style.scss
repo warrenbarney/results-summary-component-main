@@ -46,7 +46,7 @@ body {
 
     display: grid;
     width: 100vw;
-    height: 100dvh;
+    min-height: 100dvh;
     justify-content: center;
     align-items: center;
     place-items: center;
